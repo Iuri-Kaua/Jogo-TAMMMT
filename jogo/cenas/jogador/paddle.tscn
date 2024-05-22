@@ -1,0 +1,37 @@
+[gd_scene load_steps=8 format=3 uid="uid://dil7s5a83ibtu"]
+
+[ext_resource type="Script" path="res://cenas/jogador/paddle.gd" id="1_0tdui"]
+[ext_resource type="Texture2D" uid="uid://p451ddykjbe4" path="res://assets/sprites/paddle.png" id="2_8nipc"]
+[ext_resource type="Texture2D" uid="uid://cxn4q2nao2k5k" path="res://assets/sprites/ui_buttons_arrow_left_NORMAL.png" id="3_y1upn"]
+[ext_resource type="Texture2D" uid="uid://cdjqh2jrr5rxr" path="res://assets/sprites/ui_buttons_arrow_left_PRESSED.png" id="4_x6smu"]
+[ext_resource type="Texture2D" uid="uid://clko3l435yx6d" path="res://assets/sprites/ui_buttons_arrow_right_NORMAL.png" id="5_gix3a"]
+[ext_resource type="Texture2D" uid="uid://cmvg3mueykptx" path="res://assets/sprites/ui_buttons_arrow_right_PRESSED.png" id="6_pmn3a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tidpq"]
+size = Vector2(90, 20)
+
+[node name="Paddle" type="StaticBody2D" groups=["paddle"]]
+script = ExtResource("1_0tdui")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_8nipc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_tidpq")
+
+[node name="controle" type="CanvasLayer" parent="."]
+
+[node name="esquerda" type="TouchScreenButton" parent="controle"]
+position = Vector2(24, 756)
+scale = Vector2(2.3, 2.34375)
+texture_normal = ExtResource("3_y1upn")
+texture_pressed = ExtResource("4_x6smu")
+action = "mv-esquerdo"
+
+[node name="direita" type="TouchScreenButton" parent="controle"]
+position = Vector2(385, 756)
+scale = Vector2(2.3, 2.3)
+texture_normal = ExtResource("5_gix3a")
+texture_pressed = ExtResource("6_pmn3a")
+action = "mv-direito"
+visibility_mode = 1

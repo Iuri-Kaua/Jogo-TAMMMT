@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://7nxr3oegswmx"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_c2gap"]
+[ext_resource type="Texture2D" uid="uid://3247ksr4jjkk" path="res://assets/sprites/safeimagekit-pixel-art.png" id="1_elopg"]
+[ext_resource type="Texture2D" uid="uid://bpd6rqinwryar" path="res://assets/sprites/10.png" id="2_sjofd"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_c2gap")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(235, 425)
+scale = Vector2(1.27354, 1.25823)
+texture = ExtResource("1_elopg")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(145, 95)
+scale = Vector2(4.52083, 3.60937)
+texture = ExtResource("2_sjofd")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 43.0
+offset_top = 38.0
+offset_right = 253.0
+offset_bottom = 153.0
+theme_override_font_sizes/font_size = 33
+text = "Start"
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

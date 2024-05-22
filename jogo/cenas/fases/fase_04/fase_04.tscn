@@ -1,0 +1,284 @@
+[gd_scene load_steps=6 format=3 uid="uid://t04j0emhd8n7"]
+
+[ext_resource type="Texture2D" uid="uid://belcauh4wf41c" path="res://assets/sprites/campo-roxo.png" id="1_ct86y"]
+[ext_resource type="PackedScene" uid="uid://dil7s5a83ibtu" path="res://cenas/jogador/paddle.tscn" id="2_sy6uw"]
+[ext_resource type="PackedScene" uid="uid://bu3robuhk8ajw" path="res://cenas/bola/bola.tscn" id="3_4vnc3"]
+[ext_resource type="PackedScene" uid="uid://b33m3wpb46jxs" path="res://cenas/bloco/bloco.tscn" id="4_djqfn"]
+[ext_resource type="PackedScene" uid="uid://dkhtbuyettire" path="res://cenas/gameManager/game_manager.tscn" id="5_pgc5q"]
+
+[node name="Fase04" type="Node2D"]
+
+[node name="imagemDeFundo" type="Sprite2D" parent="."]
+position = Vector2(243.5, 429.501)
+scale = Vector2(0.62125, 1.445)
+texture = ExtResource("1_ct86y")
+
+[node name="Paddle" parent="." instance=ExtResource("2_sy6uw")]
+position = Vector2(240, 700)
+
+[node name="Bola" parent="." instance=ExtResource("3_4vnc3")]
+position = Vector2(240, 660)
+
+[node name="Blocos" type="Node2D" parent="."]
+
+[node name="Bloco9" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(120, 27)
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco10" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(73, 74)
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco11" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(201, 61)
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco17" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(23, 26)
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco20" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(251, 207)
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco21" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(86, 324)
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco12" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(73, 124)
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco13" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(74, 27)
+rotation = 1.57079
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco18" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(201, 158)
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco19" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(248, 158)
+rotation = 1.57079
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco14" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(154, 107)
+rotation = 1.57079
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco15" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(154, 157)
+rotation = 1.57079
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco38" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(73, 175)
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco51" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(149, 548)
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco52" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(102, 595)
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco53" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(52, 547)
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco54" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(102, 645)
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco55" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(103, 548)
+rotation = 1.57079
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco39" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(154, 208)
+rotation = 1.57079
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco25" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(54, 420)
+rotation = 1.57079
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco26" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(54, 470)
+rotation = 1.57079
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco16" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(247, 109)
+rotation = -3.14159
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco22" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(54, 372)
+rotation = -3.14159
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco27" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(186, 421)
+rotation = 1.57079
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco28" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(186, 471)
+rotation = 1.57079
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco29" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(186, 373)
+rotation = -3.14159
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco23" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(157, 323)
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco24" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(121, 371)
+rotation = -3.14159
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco30" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(345, 159)
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco31" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(313, 255)
+rotation = 1.57079
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco32" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(313, 305)
+rotation = 1.57079
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco33" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(313, 207)
+rotation = -3.14159
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco34" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(445, 256)
+rotation = 1.57079
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco35" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(445, 306)
+rotation = 1.57079
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco36" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(445, 208)
+rotation = -3.14159
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco37" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(416, 158)
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco41" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(380, 206)
+rotation = -3.14159
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco42" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(288, 399)
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco43" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(256, 495)
+rotation = 1.57079
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco44" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(256, 545)
+rotation = 1.57079
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco45" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(256, 447)
+rotation = -3.14159
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco46" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(388, 496)
+rotation = 1.57079
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco47" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(388, 546)
+rotation = 1.57079
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco48" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(388, 448)
+rotation = -3.14159
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco49" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(359, 398)
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="Bloco50" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_djqfn")]
+position = Vector2(323, 446)
+rotation = -3.14159
+game_manager = NodePath("../../GameManager")
+vida = 2
+
+[node name="GameManager" parent="." node_paths=PackedStringArray("blocos") instance=ExtResource("5_pgc5q")]
+blocos = NodePath("../Blocos")
+proxima_fase = "res://cenas/fases/fase_05/fase_05.tscn"
